@@ -1,6 +1,7 @@
 import React from "react";
 import Home from "../Pages/Home/Home";
 import { Route, Routes } from "react-router";
+import Login from "../Pages/Login/Login";
 
 const AppRoutes = () => {
   return (
@@ -12,6 +13,17 @@ const AppRoutes = () => {
             <title>Home | Task Manager</title>
 
             <Home />
+          </>
+        }
+      />
+
+      <Route
+        path="/login"
+        element={
+          <>
+            <title>Item Details | Food Zone</title>
+
+            <Login />
           </>
         }
       />
